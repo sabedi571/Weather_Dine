@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+    />
+
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    
+    <!-- site browser tab title -->
+    <title>WeatherDine</title>
+
+  </head>
+
+  <body>
+    <header>
+      <!-- Top picture -->
+      <div id="picture" class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">WeatherDine</h1>
+          <p class="lead">Plan your travel feast with weather and top restaurant information.</p>
+          <!-- <p class="lead">Just enter a city to get started.</p> -->
+        </div>
+      </div>
+    </header>
+
+    <!-- Container Details  -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row justify-content-center">
+            <div class="col-sm-4">
+              <div class="card-body">
+
+                <!-- Search Feilds Form Group -->
+                <form>
+                  <!-- Input Field for Search -->
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control align-text-middle"
+                      id="search"
+                      placeholder="Enter a city to get started"
+                      aria-label="enter city name"
+                      autocomplete="off"
+                      aria-describedby="search button"
+                    />
+                    <!-- Search Button -->
+                    <div class="input-group-append search">
+                      <button
+                        class="btn btn-outline-secondary"
+                        type="button"
+                        id="search-button"
+                      >
+                        <!-- Search button icon -->
+                        <i class="fas fa-search"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <!-- Search Radius Input Feild -->
+                  <div class="form-group hide" id="search-radius-input">
+                    <input type="input" class="form-control" id="radius" placeholder="Enter distance (mi)">
+                  </div>
+                  <!-- Search Radius Input Feild Toggle Checkbox -->
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="check-box">
+                    <label class="form-check-label" for="search-radius-input">Search radius</label>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 Day Weather Cardstyle Layout -->
+      <div class="row justify-content-center">
+        <div class="col-sm-4-md-8-lg-12">
+          <h2 id="city-time"></h2>
+          <div class="card-group" id="days">
+            <!-- Programatically added weather cards -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Results container style Layout -->
+      <div class="container" id="resultsBackground">
+        <!-- Programatically added results cards -->
+      </div>
+    </div>
+  </body>
+
+  <!-- JQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- <script src="https://use.fontawesome.com/a5c9208b33.js"></script> -->
+
+  <!-- script.js relative path -->
+  <script src="assets/js/script.js"></script>
+
+  <!-- moment api library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.31/moment-timezone-with-data-10-year-range.js"></script>
+</html>

@@ -1,0 +1,137 @@
+/* Header image */
+#picture{
+
+    background-image: url('https://images.pexels.com/photos/3475617/pexels-photo-3475617.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+}
+
+/* WeatherDine Text Stylinig  */
+h1 { 
+
+    text-align: center;
+    color: white;
+    text-decoration: solid;
+    font-family: 'Dancing Script', cursive;
+}
+
+/* Tagline */
+.lead {
+
+    text-align: center;
+    color: white;
+    text-decoration: solid;
+
+}
+
+/*Body styling  */
+body {
+
+    background-image: url('https://pixabay.com/photos/boat-sundown-sunset-sky-clouds-164989/');
+    background-color: rgb(142, 196, 209);
+
+}
+
+
+/* Search input */
+#search {
+
+    height:40px;
+    line-height:40px;
+    padding:0 12px;
+
+}
+
+/* Search button  */
+#search-button {
+
+    color: grey;
+
+}
+
+/* Search radius checkbox  */
+#search-radius-input {
+    margin-top: 10px;
+}
+
+/* City name, date & time styling */
+h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Weather card container */
+#days {
+
+    padding: 5px;
+    margin: 5px;
+    align-content: center;
+    width:1160px;
+}
+
+/* Individual weather cards  */
+.card {
+    background-color:white;
+    margin: 20px;
+ }
+
+/* Weather icons */
+.weatherIcon {
+
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+
+
+/* Restaurant name */
+h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/*Restaurant images  */
+.img-thumbnail {
+
+    height: 300px;
+    width: 300px;
+    background-color: rgb(122, 120, 120);
+
+}
+
+/* On page display */
+.hide {
+
+    display: none;
+}
+
+/* Restaurant name */
+.name {
+
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+/* Restaurant results background  */
+#resultsBackground{
+
+    background-color: aliceblue;
+    /* margin: 30px; */
+
+}
+
+/* Restaurant rows  */
+#row{
+
+    border-top: 2px solid black; 
+    padding-top: 30px;
+    padding-bottom: 10px;
+
+}
